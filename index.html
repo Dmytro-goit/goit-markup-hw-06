@@ -61,21 +61,21 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons4.svg#icon-btn-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu data-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">
+          <button class="mobile-menu-close" data-menu-close>
             <svg class="modalform-button-icon" width="8" height="8">
               <use href="./images/icons2.svg#close-black"></use>
             </svg>
           </button>
 
-          <ul class="mobile-menu-nav">
+          <ul class="mobile-menu-nav is-open">
             <li>
               <a href="./index.html" class="item-mobile">Studio</a>
             </li>
@@ -137,7 +137,7 @@
     <!--region header-->
     <main>
       <!--SECTION 1-->
-      <section class="hero hidden">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
@@ -145,7 +145,7 @@
       </section>
       <!--SECTION 1-->
       <!--SECTION 2-->
-      <section class="feature hidden">
+      <section class="feature">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages-list">
@@ -202,7 +202,7 @@
       </section>
       <!--SECTON 2-->
       <!--SECTION 3-->
-      <section class="section-three hidden">
+      <section class="section-three">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="our-team-list">
@@ -379,7 +379,7 @@
       </section>
       <!--SECTION 3-->
       <!--SECTION 4-->
-      <section class="section-portfolio hidden">
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio">
@@ -503,7 +503,7 @@
       <!--SECTION 4-->
     </main>
     <!--FOOTER-->
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container div-footer">
         <div class="div-footer2">
           <a class="footer-logo" href="./index.html"
@@ -662,5 +662,8 @@
       </div>
     </div>
     <!-- Modal Window End -->
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
