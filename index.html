@@ -28,7 +28,7 @@
   <body>
     <!--region header-->
     <header class="header-page">
-      <div class="container">
+      <div class="container header-container">
         <nav class="nav-page">
           <a class="logo" href="./index.html"
             >Web<span class="logo-style">Studio</span></a
@@ -47,11 +47,6 @@
             </li>
           </ul>
         </nav>
-        <!-- <li class="nav-item">
-              <a href="./index.html" class="nav-item-link nav-item-link1">
-                Studio
-              </a>
-            </li> -->
         <address class="header-adr">
           <ul class="header-adr-list">
             <li>
@@ -66,10 +61,81 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons2.svg#icon_menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="modalform-button-icon" width="8" height="8">
+              <use href="./images/icons2.svg#close-black"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="nav-list">
+              <li>
+                <a href="./index.html" class="nav-item-link-menu">Studio</a>
+              </li>
+              <li>
+                <a href="" class="nav-item-link-menu">Portfolio</a>
+              </li>
+              <li>
+                <a href="" class="nav-item-link-menu">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="header-adr-list-menu">
+              <li>
+                <a class="adress-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="adress-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="icons-ul">
+            <li class="icons-one">
+              <a href="" class="icons-one-link"
+                ><svg width="16" height="16" class="team-svg">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icons-one">
+              <a href="" class="icons-one-link"
+                ><svg width="16" height="16" class="team-svg">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icons-one">
+              <a href="" class="icons-one-link"
+                ><svg width="16" height="16" class="team-svg">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icons-one">
+              <a href="" class="icons-one-link"
+                ><svg width="16" height="16" class="team-svg">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--region header-->
-    <main>
+    <main class="hidden">
       <!--SECTION 1-->
       <section class="hero">
         <div class="container">
@@ -437,7 +503,7 @@
       <!--SECTION 4-->
     </main>
     <!--FOOTER-->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container div-footer">
         <div class="div-footer2">
           <a class="footer-logo" href="./index.html"
@@ -507,7 +573,7 @@
     <!--FOOTER-->
 
     <!-- Modal Window -->
-    <div class="modalwindow">
+    <div class="modalwindow hidden">
       <div class="modalwindow-box">
         <button class="modalform-button-one" type="button">
           <svg class="modalform-button-icon" width="8" height="8">
