@@ -63,7 +63,7 @@
         </address>
         <button class="burger-btn" type="button">
           <svg class="burger-icon" width="24" height="24">
-            <use href="./images/icons2.svg#icon_menu"></use>
+            <use href="./images/icons4.svg#icon-btn-menu"></use>
           </svg>
         </button>
       </div>
@@ -74,58 +74,58 @@
               <use href="./images/icons2.svg#close-black"></use>
             </svg>
           </button>
-          <nav class="mobile-menu-nav">
-            <ul class="nav-list">
-              <li>
-                <a href="./index.html" class="nav-item-link-menu">Studio</a>
-              </li>
-              <li>
-                <a href="" class="nav-item-link-menu">Portfolio</a>
-              </li>
-              <li>
-                <a href="" class="nav-item-link-menu">Contacts</a>
-              </li>
-            </ul>
-          </nav>
+
+          <ul class="mobile-menu-nav">
+            <li>
+              <a href="./index.html" class="item-mobile">Studio</a>
+            </li>
+            <li>
+              <a href="" class="item-mobile">Portfolio</a>
+            </li>
+            <li>
+              <a href="" class="item-mobile">Contacts</a>
+            </li>
+          </ul>
+
           <address>
             <ul class="header-adr-list-menu">
               <li>
-                <a class="adress-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+                <a class="mobile-adress" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
                 >
               </li>
               <li>
-                <a class="adress-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+                <a class="mobile-adress" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
             </ul>
           </address>
-          <ul class="icons-ul">
-            <li class="icons-one">
-              <a href="" class="icons-one-link"
-                ><svg width="16" height="16" class="team-svg">
+          <ul class="ul-footer">
+            <li class="icons-two">
+              <a href="" class="icons-two-link">
+                <svg width="24" height="24" class="footer-svg">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="icons-one">
-              <a href="" class="icons-one-link"
-                ><svg width="16" height="16" class="team-svg">
+            <li class="icons-two">
+              <a href="" class="icons-two-link"
+                ><svg width="24" height="24" class="footer-svg">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="icons-one">
-              <a href="" class="icons-one-link"
-                ><svg width="16" height="16" class="team-svg">
+            <li class="icons-two">
+              <a href="" class="icons-two-link"
+                ><svg width="24" height="24" class="footer-svg">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="icons-one">
-              <a href="" class="icons-one-link"
-                ><svg width="16" height="16" class="team-svg">
+            <li class="icons-two">
+              <a href="" class="icons-two-link"
+                ><svg width="24" height="24" class="footer-svg">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
@@ -135,9 +135,9 @@
       </div>
     </header>
     <!--region header-->
-    <main class="hidden">
+    <main>
       <!--SECTION 1-->
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
@@ -145,7 +145,7 @@
       </section>
       <!--SECTION 1-->
       <!--SECTION 2-->
-      <section class="feature">
+      <section class="feature hidden">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages-list">
@@ -202,7 +202,7 @@
       </section>
       <!--SECTON 2-->
       <!--SECTION 3-->
-      <section class="section-three">
+      <section class="section-three hidden">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="our-team-list">
@@ -379,7 +379,7 @@
       </section>
       <!--SECTION 3-->
       <!--SECTION 4-->
-      <section class="section-portfolio">
+      <section class="section-portfolio hidden">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio">
@@ -515,7 +515,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="media-box">
           <p class="footer-text-two">Social media</p>
           <ul class="ul-footer">
             <li class="icons-two">
@@ -573,7 +573,7 @@
     <!--FOOTER-->
 
     <!-- Modal Window -->
-    <div class="modalwindow hidden">
+    <div class="modalwindow">
       <div class="modalwindow-box">
         <button class="modalform-button-one" type="button">
           <svg class="modalform-button-icon" width="8" height="8">
@@ -646,13 +646,15 @@
               required
             />
             <label for="user-privacy" class="label-privacy">
-              <span class="span-privacy">
-                <svg class="span-icon" height="8" width="10">
-                  <use href="./images/icons3.svg#Vector21"></use>
-                </svg>
+              <span>
+                <span class="span-privacy">
+                  <svg class="span-icon" height="8" width="10">
+                    <use href="./images/icons3.svg#Vector21"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="" class="privacy-link">Privacy Policy</a>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy-link">Privacy Policy</a>
             </label>
           </div>
           <button class="modalform-button-two" type="submit">Send</button>
